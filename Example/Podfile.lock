@@ -1,0 +1,55 @@
+PODS:
+  - BlueIntent/Base (0.11.0)
+  - BlueIntent/Foundation (0.11.0):
+    - BlueIntent/Base
+  - BlueIntent/Layout (0.11.0):
+    - BlueIntent/Base
+    - PureLayout (~> 3.1.6)
+  - BlueIntent/UIKit (0.11.0):
+    - BlueIntent/Base
+    - BlueIntent/Foundation
+  - BlueIntentControllerTransitioning (0.1.0):
+    - BlueIntent/Base (~> 0.11.0)
+  - FBSnapshotTestCase (2.1.4):
+    - FBSnapshotTestCase/SwiftSupport (= 2.1.4)
+  - FBSnapshotTestCase/Core (2.1.4)
+  - FBSnapshotTestCase/SwiftSupport (2.1.4):
+    - FBSnapshotTestCase/Core
+  - PureLayout (3.1.8)
+  - SDCycleScrollView (1.82):
+    - SDWebImage (>= 5.0.0)
+  - SDWebImage (5.11.1):
+    - SDWebImage/Core (= 5.11.1)
+  - SDWebImage/Core (5.11.1)
+
+DEPENDENCIES:
+  - BlueIntent/Foundation
+  - BlueIntent/Layout
+  - BlueIntent/UIKit
+  - BlueIntentControllerTransitioning (from `../`)
+  - FBSnapshotTestCase (~> 2.1.4)
+  - SDCycleScrollView
+
+SPEC REPOS:
+  trunk:
+    - BlueIntent
+    - FBSnapshotTestCase
+    - PureLayout
+    - SDCycleScrollView
+    - SDWebImage
+
+EXTERNAL SOURCES:
+  BlueIntentControllerTransitioning:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  BlueIntent: 9af7b64854a57c7adc4353650442c174063347c7
+  BlueIntentControllerTransitioning: cd3d020ca55c569026790e5b4afe5ae0e896a3f2
+  FBSnapshotTestCase: 094f9f314decbabe373b87cc339bea235a63e07a
+  PureLayout: a4afb3d79dd958564ce33d22c89f407280d8e6a8
+  SDCycleScrollView: a0d74c3384caa72bdfc81470bdbc8c14b3e1fbcf
+  SDWebImage: a7f831e1a65eb5e285e3fb046a23fcfbf08e696d
+
+PODFILE CHECKSUM: ae8bcd462ac10a2a8cd0eb5c39fafe0ea5d6778f
+
+COCOAPODS: 1.10.1

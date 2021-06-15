@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5BA160AC26787E41005904DD /* BlueIntentControllerTransitioning.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BA160AB26787E41005904DD /* BlueIntentControllerTransitioning.swift */; };
+		5BA160AE26787EFA005904DD /* BlueIntentControllerTransitioningPresent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BA160AD26787EFA005904DD /* BlueIntentControllerTransitioningPresent.swift */; };
+		5BA160B02678858F005904DD /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BA160AF2678858F005904DD /* DetailViewController.swift */; };
+		5BA160B2267894C3005904DD /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BA160B1267894C3005904DD /* BaseViewController.swift */; };
 		607FACD61AFB9204008FA782 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACD51AFB9204008FA782 /* AppDelegate.swift */; };
 		607FACD81AFB9204008FA782 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACD71AFB9204008FA782 /* ViewController.swift */; };
 		607FACDB1AFB9204008FA782 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 607FACD91AFB9204008FA782 /* Main.storyboard */; };
@@ -28,9 +32,13 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		1FD7BC79867E4CFDB9022921 /* BlueIntentControllerTransitioning.podspec */ = {isa = PBXFileReference; includeInIndex = 1; name = BlueIntentControllerTransitioning.podspec; path = ../BlueIntentControllerTransitioning.podspec; sourceTree = "<group>"; };
+		1FD7BC79867E4CFDB9022921 /* BlueIntentControllerTransitioning.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = BlueIntentControllerTransitioning.podspec; path = ../BlueIntentControllerTransitioning.podspec; sourceTree = "<group>"; };
 		3C86F6D995BAF5ABE983B67E /* Pods-BlueIntentControllerTransitioning_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BlueIntentControllerTransitioning_Tests.debug.xcconfig"; path = "Target Support Files/Pods-BlueIntentControllerTransitioning_Tests/Pods-BlueIntentControllerTransitioning_Tests.debug.xcconfig"; sourceTree = "<group>"; };
-		565F6D16CF201A6C52627522 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		565F6D16CF201A6C52627522 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		5BA160AB26787E41005904DD /* BlueIntentControllerTransitioning.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = BlueIntentControllerTransitioning.swift; path = ../BlueIntentControllerTransitioning/Classes/BlueIntentControllerTransitioning.swift; sourceTree = "<group>"; };
+		5BA160AD26787EFA005904DD /* BlueIntentControllerTransitioningPresent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = BlueIntentControllerTransitioningPresent.swift; path = ../BlueIntentControllerTransitioning/Classes/BlueIntentControllerTransitioningPresent.swift; sourceTree = "<group>"; };
+		5BA160AF2678858F005904DD /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		5BA160B1267894C3005904DD /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
 		607FACD01AFB9204008FA782 /* BlueIntentControllerTransitioning_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BlueIntentControllerTransitioning_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		607FACD41AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		607FACD51AFB9204008FA782 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -42,7 +50,7 @@
 		607FACEA1AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		607FACEB1AFB9204008FA782 /* Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests.swift; sourceTree = "<group>"; };
 		6BCCE897DCEB51DCB8C2624D /* Pods-BlueIntentControllerTransitioning_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BlueIntentControllerTransitioning_Example.release.xcconfig"; path = "Target Support Files/Pods-BlueIntentControllerTransitioning_Example/Pods-BlueIntentControllerTransitioning_Example.release.xcconfig"; sourceTree = "<group>"; };
-		81BA4A4029C452A92183DCBC /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		81BA4A4029C452A92183DCBC /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		A119B37273F063F964FA67B4 /* Pods_BlueIntentControllerTransitioning_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BlueIntentControllerTransitioning_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		AC54BFFEDA9B3DFC25169BE6 /* Pods-BlueIntentControllerTransitioning_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BlueIntentControllerTransitioning_Tests.release.xcconfig"; path = "Target Support Files/Pods-BlueIntentControllerTransitioning_Tests/Pods-BlueIntentControllerTransitioning_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		E62A60AE852CE1934FA8515A /* Pods_BlueIntentControllerTransitioning_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BlueIntentControllerTransitioning_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -77,7 +85,6 @@
 				3C86F6D995BAF5ABE983B67E /* Pods-BlueIntentControllerTransitioning_Tests.debug.xcconfig */,
 				AC54BFFEDA9B3DFC25169BE6 /* Pods-BlueIntentControllerTransitioning_Tests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -115,7 +122,9 @@
 			isa = PBXGroup;
 			children = (
 				607FACD51AFB9204008FA782 /* AppDelegate.swift */,
+				5BA160B1267894C3005904DD /* BaseViewController.swift */,
 				607FACD71AFB9204008FA782 /* ViewController.swift */,
+				5BA160AF2678858F005904DD /* DetailViewController.swift */,
 				607FACD91AFB9204008FA782 /* Main.storyboard */,
 				607FACDC1AFB9204008FA782 /* Images.xcassets */,
 				607FACDE1AFB9204008FA782 /* LaunchScreen.xib */,
@@ -154,6 +163,8 @@
 			isa = PBXGroup;
 			children = (
 				1FD7BC79867E4CFDB9022921 /* BlueIntentControllerTransitioning.podspec */,
+				5BA160AB26787E41005904DD /* BlueIntentControllerTransitioning.swift */,
+				5BA160AD26787EFA005904DD /* BlueIntentControllerTransitioningPresent.swift */,
 				565F6D16CF201A6C52627522 /* README.md */,
 				81BA4A4029C452A92183DCBC /* LICENSE */,
 			);
@@ -228,6 +239,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 				Base,
 			);
@@ -310,11 +322,19 @@
 			);
 			inputPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-BlueIntentControllerTransitioning_Example/Pods-BlueIntentControllerTransitioning_Example-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/BlueIntent/BlueIntent.framework",
 				"${BUILT_PRODUCTS_DIR}/BlueIntentControllerTransitioning/BlueIntentControllerTransitioning.framework",
+				"${BUILT_PRODUCTS_DIR}/PureLayout/PureLayout.framework",
+				"${BUILT_PRODUCTS_DIR}/SDCycleScrollView/SDCycleScrollView.framework",
+				"${BUILT_PRODUCTS_DIR}/SDWebImage/SDWebImage.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/BlueIntent.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/BlueIntentControllerTransitioning.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/PureLayout.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SDCycleScrollView.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SDWebImage.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -350,8 +370,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5BA160AC26787E41005904DD /* BlueIntentControllerTransitioning.swift in Sources */,
+				5BA160AE26787EFA005904DD /* BlueIntentControllerTransitioningPresent.swift in Sources */,
+				5BA160B02678858F005904DD /* DetailViewController.swift in Sources */,
 				607FACD81AFB9204008FA782 /* ViewController.swift in Sources */,
 				607FACD61AFB9204008FA782 /* AppDelegate.swift in Sources */,
+				5BA160B2267894C3005904DD /* BaseViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
