@@ -2,7 +2,7 @@
 
 [![CI Status](https://travis-ci.com/QiuZhiFei/BlueIntentControllerTransitioning.svg?branch=master)](https://travis-ci.com/qiuzhifei/BlueIntentControllerTransitioning)
 [![Version](https://img.shields.io/cocoapods/v/BlueIntentControllerTransitioning.svg?style=flat)](https://cocoapods.org/pods/BlueIntentControllerTransitioning)
-[![License](https://img.shields.io/cocoapods/l/BlueIntentControllerTransitioning.svg?style=flat)](https://cocoapods.org/pods/BlueIntentControllerTransitioning)
+[![License](https://img.shields.io/cocoapods/l/BlueIntentControllerTransitioning)](https://github.com/qiuzhifei/BlueIntentControllerTransitioning/blob/master/LICENSE)
 [![Platform](https://img.shields.io/cocoapods/p/BlueIntentControllerTransitioning.svg?style=flat)](https://cocoapods.org/pods/BlueIntentControllerTransitioning)
 
 BlueIntentControllerTransitioning is a framework for drag to dismiss a modal controller.
