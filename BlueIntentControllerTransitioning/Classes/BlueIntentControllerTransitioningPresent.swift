@@ -263,10 +263,17 @@ extension BlueIntent.ControllerTransitioning.Present {
       guard let presentTransitioningData = presentedViewController.bi.presentTransitioningData else { return }
       
       self.containerView?.backgroundColor = .clear
+      
+      presentingViewController.beginAppearanceTransition(false, animated: true)
       _ = presentedViewController.transitionCoordinator?.animate(alongsideTransition: { [weak self] (_) in
         guard let `self` = self else { return }
         self.containerView?.backgroundColor = presentTransitioningData.maskColor
       }, completion: nil)
+    }
+    
+    override func presentationTransitionDidEnd(_ completed: Bool) {
+      super.presentationTransitionDidEnd(completed)
+      presentingViewController.endAppearanceTransition()
     }
     
     override func dismissalTransitionWillBegin() {
@@ -294,8 +301,8 @@ extension BlueIntent.ControllerTransitioning.Present {
       guard
         let fromVC = transitionContext.viewController(forKey: .from),
         let toVC = transitionContext.viewController(forKey: .to) else {
-        return
-      }
+          return
+        }
       
       let containerView = transitionContext.containerView
       let screenBounds = containerView.bounds
@@ -304,19 +311,15 @@ extension BlueIntent.ControllerTransitioning.Present {
       let finalFrame = CGRect(origin: CGPoint(x: 0, y: 0),
                               size: screenBounds.size)
       
-      // fromVC viewWillDisappear
-      fromVC.beginAppearanceTransition(false, animated:true)
-      
       toVC.view.frame = startFrame
       containerView.addSubview(toVC.view)
       
       UIView.animate(
         withDuration: transitionDuration(using: transitionContext)) {
-        toVC.view.frame = finalFrame
-      } completion: { (_) in
-        transitionContext.completeTransition(!transitionContext.transitionWasCancelled)
-        fromVC.endAppearanceTransition()
-      }
+          toVC.view.frame = finalFrame
+        } completion: { (_) in
+          transitionContext.completeTransition(!transitionContext.transitionWasCancelled)
+        }
     }
   }
 }
@@ -335,38 +338,30 @@ extension BlueIntent.ControllerTransitioning.Present {
       guard
         let fromVC = transitionContext.viewController(forKey: UITransitionContextViewControllerKey.from),
         let toVC = transitionContext.viewController(forKey: UITransitionContextViewControllerKey.to) else {
-        return
-      }
+          return
+        }
       
       let containerView = transitionContext.containerView
       let screenBounds = containerView.bounds
       let finalFrame = CGRect(origin: CGPoint(x: 0, y: screenBounds.height),
                               size: screenBounds.size)
       
-      // 上一页 viewWillAppear
       toVC.beginAppearanceTransition(true, animated:true)
-      
       UIView.animate(
-        withDuration: transitionDuration(using: transitionContext),
-        animations: {
+        withDuration: transitionDuration(using: transitionContext)) {
           fromVC.view.frame = finalFrame
-        },
-        completion: { _ in
+        } completion: { _ in
           if transitionContext.transitionWasCancelled {
             // 滑动取消
-            // 上一页 viewWillDisappear
-            toVC.beginAppearanceTransition(false, animated:true)
-            // 上一页 viewDidDisappear
-            toVC.endAppearanceTransition() // *
+            toVC.beginAppearanceTransition(false, animated: true)
+            toVC.endAppearanceTransition()
+            transitionContext.completeTransition(!transitionContext.transitionWasCancelled)
           } else {
             // 滑动结束
-            // 上一页 viewDidAppear
+            transitionContext.completeTransition(!transitionContext.transitionWasCancelled)
             toVC.endAppearanceTransition()
           }
-          transitionContext.completeTransition(!transitionContext.transitionWasCancelled)
         }
-      )
     }
   }
 }
-
